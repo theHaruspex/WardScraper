@@ -21,7 +21,6 @@ class Ward:
         toc_elements = self.get_toc_elements()
         arc_data = self.get_arc_data(toc_elements)
         self.arc_list = self.get_arc_list(arc_data)
-        
         ebook_list = self.compile_full_ebook_list()
         book.spine = ['nav'] + ebook_list
         self.define_ebook_toc()
@@ -162,7 +161,7 @@ class Ward:
                 return content
                     
 book = establish_ebook()
-ward = Ward()
+Ward()
         
     
 
